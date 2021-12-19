@@ -9,3 +9,11 @@ This repository contains a pytorch implementations for paper\[[pdf](https://www.
 The author's tensorflow code can be seen in https://github.com/mark-xhchen/IE-CNN. 
 
 Note that this code is IE-CNN+Softmax instead of IE-CNN+CRF.
+
+## Quick Start  
+
+Run our model:
+
+%run torch33.py
+
+Note that you need download word embedding file w2v_200.txt.
