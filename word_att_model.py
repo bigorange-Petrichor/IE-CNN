@@ -10,7 +10,7 @@ class WordAttNet(nn.Module):
         self.lstm1 = nn.LSTM(dict.shape[1], hidden_size, bidirectional=True)
         self.fc1 = nn.Linear(2 * hidden_size, 2 * hidden_size)
         self.fc3 = nn.Linear(2 * hidden_size, 1, bias=False)
-        self.dropout1 = nn.Dropout(p=0.5)
+        self.dropout1 = nn.Dropout(p=0.2)
 
     def forward(self, input):
         output = self.lookup(input)
